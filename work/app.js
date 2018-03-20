@@ -4,7 +4,7 @@
 
 // 画面を初期設定する
 let shokiSettei = () => {
-
+  
   // おみくじ結果パネルを隠す
   kakusuPanel(kekkaPanel);
 
@@ -12,26 +12,238 @@ let shokiSettei = () => {
   kakusuPanel(modoruButton);
 
   // タイトル画面のおみくじ画像を設定する
-  setteiHomeImage('omikuji.png');
+  setteiHomeImage('gachagacha.png');
 
 }
 
 // おみくじの中身
 let omikujiNakami = [
-  { // 吉の設定
-    kekkaTitle: '', // おみくじの結果のタイトル文
-    kekkaSetsumei: '', // おみくじの結果につける説明文
-    kekkaImage: '' //おみくじの結果に表示する画像
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
   },
-  { // 凶の設定
-    kekkaTitle: '', // おみくじの結果のタイトル文
-    kekkaSetsumei: '', // おみくじの結果につける説明文
-    kekkaImage: '' //おみくじの結果に表示する画像
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'ネコ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '当たり。ミャ〜オ', // おみくじの結果につける説明文
+    kekkaImage: 'neko.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  { 
+    kekkaTitle: 'イヌ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大当たり！ワオーン！', // おみくじの結果につける説明文
+    kekkaImage: 'inu.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ムカデ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大ハズレ！また次がある！', // おみくじの結果につける説明文
+    kekkaImage: 'mukade.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ムカデ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大ハズレ！また次がある！', // おみくじの結果につける説明文
+    kekkaImage: 'mukade.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'パンダ！', // おみくじの結果のタイトル文
+    kekkaSetsumei: '超当たり！！かわいい❤️', // おみくじの結果につける説明文
+    kekkaImage: 'panda.jpg' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'パンダ！', // おみくじの結果のタイトル文
+    kekkaSetsumei: '超当たり！！かわいい❤️', // おみくじの結果につける説明文
+    kekkaImage: 'panda.jpg' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'パンダ！', // おみくじの結果のタイトル文
+    kekkaSetsumei: '超当たり！！かわいい❤️', // おみくじの結果につける説明文
+    kekkaImage: 'panda.jpg' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ムカデ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大ハズレ！また次がある！', // おみくじの結果につける説明文
+    kekkaImage: 'mukade.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ムカデ', // おみくじの結果のタイトル文
+    kekkaSetsumei: '大ハズレ！また次がある！', // おみくじの結果につける説明文
+    kekkaImage: 'mukade.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ユニコーン！！！',
+    kekkaSetsumei: '激レア！！これを引いたあなたはとんでもなく運がいい…。',
+    kekkaImage: 'yunikon.png'
   }
 ];
 
+let omikujiRoulette = [
+  'gokiburi.png',
+  'inu.png',
+  'mukade.png',
+  'neko.png',
+  'panda.jpg'
+];
+
+// ルーレットを表示する関数
+let miseruRoulette = () => {
+  // 出目がアニメーションの画像数だけあるサイコロを振る
+  let saikoroKekka = furuSaikoro(omikujiRoulette.length);
+  // サイコロを振って出た番号の画像を表示させる。
+  setteiHomeImage(omikujiRoulette[saikoroKekka]);
+}
+
+
 // おみくじを引く
-let hikuOmikuji = () => {
+let miseruOmikujiKekka = () => {
 
   // 始めの画面のおみくじ画像を隠す
   kakusuPanel(omikujiImage);
@@ -40,10 +252,9 @@ let hikuOmikuji = () => {
   kakusuPanel(hikuButton);
 
   // おみくじの中身の数までが出るサイコロをふる
-  let saikoroMe = furuSaikoro(omikujiNakami.length);
+  let saikoroKekka = furuSaikoro(omikujiNakami.length);
 
-  // 出て来たサイコロの目からおみくじの結果を得る
-  let omikujiKekka = omikujiNakami[saikoroMe];
+  let omikujiKekka = omikujiNakami[saikoroKekka];
 
   // おみくじの結果からタイトルを画面に貼り付ける
   setteiKekkaTitle(omikujiKekka.kekkaTitle);
@@ -59,6 +270,26 @@ let hikuOmikuji = () => {
 
   // 「戻る」ボタンを表示する
   miseruPanel(modoruButton);
+
+}
+
+let hikuOmikuji = () => {
+
+  
+  // 0.1秒で画像を変えるルーレットのアニメーションを開始する
+  let rouletteTimer = kurikaesuTimer(miseruRoulette,200);
+  
+// 3秒待って結果を表示する
+matsuTimer(()=>{
+    // ルーレットのタイマーを止める
+    tomeruTimer(rouletteTimer);
+
+    // おみくじの結果を見せる
+    miseruOmikujiKekka();
+
+    setteiHomeImage('gachagacha.png')
+
+  },3000); // 3000ミリ秒=3秒に設定
 
 }
 
