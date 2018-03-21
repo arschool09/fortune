@@ -184,6 +184,31 @@ let omikujiNakami = [
     kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
   },
   {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
+    kekkaTitle: 'ゴキブリくん', // おみくじの結果のタイトル文
+    kekkaSetsumei: 'ハズレ。残念！', // おみくじの結果につける説明文
+    kekkaImage: 'gokiburi.png' //おみくじの結果に表示する画像
+  },
+  {
     kekkaTitle: 'ムカデ', // おみくじの結果のタイトル文
     kekkaSetsumei: '大ハズレ！また次がある！', // おみくじの結果につける説明文
     kekkaImage: 'mukade.png' //おみくじの結果に表示する画像
@@ -267,6 +292,13 @@ let miseruOmikujiKekka = () => {
 
   // おみくじの結果画面を表示する
   miseruPanel(kekkaPanel);
+  
+  let main = document.getElementsByClassName('main')[0];
+  main.classList.remove('yuto');
+  if(omikujiKekka.kekkaTitle === 'ユニコーン！！！')
+  {
+    main.classList.add('yuto');
+  }
 
   // 「戻る」ボタンを表示する
   miseruPanel(modoruButton);

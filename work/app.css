@@ -1,0 +1,69 @@
+/* おみくじアプリのスタイル */
+
+/* メイン画面のレイアウト */
+.main {
+  background: rgba(10,211,247,1);
+background: -moz-linear-gradient(top, rgba(10,211,247,1) 0%, rgba(245,233,8,0.86) 70%, rgba(122,242,9,0.8) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,211,247,1)), color-stop(70%, rgba(245,233,8,0.86)), color-stop(100%, rgba(122,242,9,0.8)));
+background: -webkit-linear-gradient(top, rgba(10,211,247,1) 0%, rgba(245,233,8,0.86) 70%, rgba(122,242,9,0.8) 100%);
+background: -o-linear-gradient(top, rgba(10,211,247,1) 0%, rgba(245,233,8,0.86) 70%, rgba(122,242,9,0.8) 100%);
+background: -ms-linear-gradient(top, rgba(10,211,247,1) 0%, rgba(245,233,8,0.86) 70%, rgba(122,242,9,0.8) 100%);
+background: linear-gradient(to bottom, rgba(10,211,247,1) 0%, rgba(245,233,8,0.86) 70%, rgba(122,242,9,0.8) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ad3f7', endColorstr='#7af209', GradientType=0 );
+
+  border-color: black;
+}
+
+
+/* クリックできるボタン */
+.btn {
+  border-color: black;
+}
+
+/* ベージュのボタンの背景 */
+.btn-beige {
+  background-color: #fff8dc;
+}
+
+/* ベージュのボタンマウスオーバー時の背景 */
+.btn-beige:hover {
+  background-color: #eee8aa;
+}
+
+/* 赤いボタンの背景 */
+.btn-red {
+  background-color: #ff0000;
+}
+
+/* 赤いボタンマウスオーバー時の背景 */
+.btn-red:hover {
+  background-color: #ff4500;
+}
+
+/* ボタン中のテキストを縦横中央に設置 */
+.btn>p {
+  color: black;
+}
+
+/* ボタン中のヘッダ２を縦横中央に設置 */
+.btn>h2 {
+  color: black;
+}
+
+/* 結果等を表示する枠 */
+.panel {
+  background-color: #fff8dc;
+  border-color:black;
+}
+
+.main.yuto .kekka-panel{
+  background: rgba(252,234,187,1);
+background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(207,230,30,1) 27%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(207,230,30,1) 72%, rgba(251,223,147,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,234,187,1)), color-stop(27%, rgba(207,230,30,1)), color-stop(50%, rgba(252,205,77,1)), color-stop(51%, rgba(248,181,0,1)), color-stop(72%, rgba(207,230,30,1)), color-stop(100%, rgba(251,223,147,1)));
+background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(207,230,30,1) 27%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(207,230,30,1) 72%, rgba(251,223,147,1) 100%);
+background: -o-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(207,230,30,1) 27%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(207,230,30,1) 72%, rgba(251,223,147,1) 100%);
+background: -ms-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(207,230,30,1) 27%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(207,230,30,1) 72%, rgba(251,223,147,1) 100%);
+background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(207,230,30,1) 27%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(207,230,30,1) 72%, rgba(251,223,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0 );
+
+}
